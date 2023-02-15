@@ -53,6 +53,12 @@ typedef struct
 }ADCDMABuffer;
 
 ADCDMABuffer adcdmabuffer[10]; // set
+
+uint16_t AvgVin = 0; // AvgVin (bit)
+uint16_t Vin = 0; //  translate Vin(bit) to mV
+
+uint16_t AvgTemp = 0 ; // bit
+uint16_t TemptoKevin = 0 ;  // K
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
