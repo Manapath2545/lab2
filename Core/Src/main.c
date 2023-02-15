@@ -45,7 +45,14 @@ DMA_HandleTypeDef hdma_adc1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+typedef struct
+{
+	uint16_t IN0; //set in0
+	uint16_t Temp; //set temp
 
+}ADCDMABuffer;
+
+ADCDMABuffer adcdmabuffer[10]; // set
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
